@@ -17,7 +17,7 @@ export default function Custom404() {
         onClick={() => {
           router.push('/')
         }}>
-        Go To Map
+        Return to home
       </Button>
     </div>
   )

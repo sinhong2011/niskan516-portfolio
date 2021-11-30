@@ -14,8 +14,9 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
-import ThemeToggleButton from './theme-toggle-button'
+// import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from 'components/theme-toggle-button'
+import Logo from 'components/logo'
 
 type LinkItemProps = {
   href: string
@@ -71,7 +72,7 @@ const Navbar = (props: NavbarProps) => {
         justify="space-between">
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            {/* <Logo /> */}
+            <Logo />
           </Heading>
         </Flex>
 
@@ -88,7 +89,7 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem
+          {/* <LinkItem
             _target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
             path={path}
@@ -98,7 +99,7 @@ const Navbar = (props: NavbarProps) => {
             pl={2}>
             <IoLogoGithub />
             Source
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
@@ -122,11 +123,11 @@ const Navbar = (props: NavbarProps) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
+                {/* <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage">
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
