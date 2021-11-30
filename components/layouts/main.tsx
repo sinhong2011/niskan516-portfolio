@@ -43,7 +43,7 @@ const Main = ({ children, router }: MainProps) => (
         name="msapplication-config"
         content="/icons/browserconfig.xml?v=1"
       />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content="#1A202C" />
       <meta property="og:site_name" content="niskAn516's portfolio" />
       <meta property="og:type" content="website" />
       <link rel="manifest" href="/manifest.json" />
