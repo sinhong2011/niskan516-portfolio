@@ -47,7 +47,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/computer-cat-icon.png" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
