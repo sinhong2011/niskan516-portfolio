@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import React from 'react'
 import { Router } from 'next/router'
+import Navbar from 'components/navbar'
+import Footer from 'components/footer'
 
 type MainProps = { children: React.ReactNode; router: Router }
 
@@ -49,9 +51,11 @@ const Main = ({ children, router }: MainProps) => (
       <link rel="manifest" href="/manifest.json" />
       <title>{process.env.REACT_APP_TITLE}</title>
     </Head>
+    <Navbar path={router.asPath} />
     <Container maxW="container.md" pt={14}>
       {children}
     </Container>
+    <Footer />
   </Box>
 )
 
