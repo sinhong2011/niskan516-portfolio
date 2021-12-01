@@ -86,8 +86,8 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/projects" path={path}>
+            Projects
           </LinkItem>
           {/* <LinkItem
             _target="_blank"
@@ -120,8 +120,8 @@ const Navbar = (props: NavbarProps) => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
                 {/* <MenuItem
                   as={Link}
