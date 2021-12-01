@@ -2,7 +2,7 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import {
-  // Link,
+  Link,
   Container,
   Heading,
   Box,
@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react'
 import Section from 'components/section'
 import Paragraph from 'components/paragraph'
+import { BioSection, BioYear } from 'components/bio'
 
 function HomePage() {
   return (
@@ -34,7 +35,7 @@ function HomePage() {
           <Heading as="h2" variant="page-title">
             Leo Kan
           </Heading>
-          <p>Digital Craftsman (Developer / Dancer / Designer )</p>
+          <p>Digital Craftsman (Developer / Dancer / Designer)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -72,6 +73,29 @@ function HomePage() {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1995</BioYear>
+          Born on Earth.
+        </BioSection>
+        <BioSection>
+          <BioYear>2019</BioYear>
+          Completed the Higher Diploma in Data Science and Analytics Programme
+          and Worked at{' '}
+          <NextLink href="https://www.alliance.hk">
+            <Link href="https://www.alliance.hk" target="_blank">
+              Alliance Computer Systems Ltd.
+            </Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 June to present</BioYear>
+          Work at 3hk
+        </BioSection>
       </Section>
     </Container>
   )
