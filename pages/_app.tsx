@@ -7,6 +7,9 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import Layout from 'components/layouts/main'
 import { isBrowser } from 'utils/xCm'
+import { AnimatePresence } from 'framer-motion'
+import theme from 'lib/theme'
+import Fonts from 'components/fonts'
 
 function App({ Component, pageProps, router }: AppProps) {
   const [docLoader, setDocLoader] = useState<HTMLElement | null>(null)
@@ -45,9 +48,12 @@ function App({ Component, pageProps, router }: AppProps) {
         showOnShallow
       />
 
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
+        <Fonts />
         <Layout router={router}>
-          <Component {...pageProps} key={router.route} />
+          <AnimatePresence exitBeforeEnter initial={true}>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
         </Layout>
       </ChakraProvider>
     </>
