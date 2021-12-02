@@ -3,19 +3,19 @@ const withPWA = require('next-pwa')
 /** @type {import('next').NextConfig} */
 
 module.exports = withPWA({
+  future: {
+    webpack5: true,
+  },
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: {
-    disableStaticImages: true,
-  },
   pwa: {
     dest: 'public',
     register: true,
-    skipWaiting: true,
+    // skipWaiting: true,
   },
   publicRuntimeConfig: {
     REACT_APP_ENV: process.env.REACT_APP_ENV,
@@ -32,12 +32,13 @@ module.exports = withPWA({
     GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
   },
   swcMinify: true,
-  webpack: c => {
-    c.module.rules.push({
+  webpack: config => {
+    config.module.rules.push({
       test: /\.svg$/,
       issuer: /\.(js|ts)x?$/,
       use: ['@svgr/webpack'],
     })
-    return c
+
+    return config
   },
 })

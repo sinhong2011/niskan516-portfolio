@@ -9,14 +9,15 @@ import {
   Image,
   // SimpleGrid,
   Button,
-  // List,
-  // ListItem,
-  // Icon,
+  List,
+  ListItem,
+  Icon,
   useColorModeValue,
 } from '@chakra-ui/react'
 import Section from 'components/section'
 import Paragraph from 'components/paragraph'
 import { BioSection, BioYear } from 'components/bio'
+import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
 
 function HomePage() {
   return (
@@ -83,19 +84,74 @@ function HomePage() {
           Born on Earth.
         </BioSection>
         <BioSection>
-          <BioYear>2019</BioYear>
-          Completed the Higher Diploma in Data Science and Analytics Programme
-          and Worked at{' '}
-          <NextLink href="https://www.alliance.hk">
-            <Link href="https://www.alliance.hk" target="_blank">
-              Alliance Computer Systems Ltd.
+          <BioYear>2017</BioYear>
+          Take course of{' '}
+          <NextLink href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/">
+            <Link
+              href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/"
+              target="_blank">
+              Higher Diploma in Data Science and Analytics
             </Link>
           </NextLink>
         </BioSection>
         <BioSection>
-          <BioYear>2021 June to present</BioYear>
-          Work at 3hk
+          <BioYear>2018</BioYear>
+          Analytics Intern for{' '}
+          <NextLink href="/works/qbs/">
+            <Link href="/works/qbs/">QBS System Ltd in Summer.</Link>
+          </NextLink>
         </BioSection>
+        <BioSection>
+          <BioYear>2019</BioYear>
+          Completed the Higher Diploma and Worked at{' '}
+          <NextLink href="/works/acs/">
+            <Link href="/works/acs/">Alliance Computer Systems Ltd.</Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 June to present</BioYear>
+          Work at{' '}
+          <NextLink href="/works/hthk/">
+            <Link href="/works/hthk/">HTHK</Link>
+          </NextLink>
+        </BioSection>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Cat, Breaking Dance, Gyming, ACG, Music, Running, Hiking, Reading
+        </Paragraph>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/sinhong2011" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}>
+                @sinhong2011
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.instagram.com/niskan516.dev/"
+              target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}>
+                @niskan516.dev
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
     </Container>
   )
