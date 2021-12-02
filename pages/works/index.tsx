@@ -19,7 +19,7 @@ const Page = () => (
             title="Frontend Developer"
             company="Alliance Computer Systems Ltd."
             thumbnail={AcsThumbnail}>
-            Be responsible for developing web, mobile and apps to improve user
+            Responsible for developing web, mobile and apps to improve user
             experience.
           </WorkGridItem>
         </Section>
@@ -29,7 +29,7 @@ const Page = () => (
             title="Analytics Intern"
             company="QBS Systems Ltd."
             thumbnail={QbsThumbnail}>
-            Build five utility tools for Deep Learing related research.
+            Build five utility tools for Machine Learing researcher.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
