@@ -73,7 +73,11 @@ export const WorkGridItem = ({
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">
-        <Text m="2" fontWeight="bold" fontSize="20" textDecoration="underline">
+        <Text
+          height="65px"
+          fontWeight="bold"
+          fontSize="20"
+          textDecoration="underline">
           {company}
         </Text>
         <Image
@@ -81,6 +85,7 @@ export const WorkGridItem = ({
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
+          objectFit="contain"
         />
         <LinkOverlay href={`/works/${id}`}>
           <Heading mt={2} as="h4" variant="section-title">
