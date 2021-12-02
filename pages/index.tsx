@@ -29,7 +29,7 @@ function HomePage() {
         mt={2}
         mb={6}
         align="center">
-        {`Hello, I'm a Web Developer and mainly foucus on front-end based in Hong Kong!`}
+        {`Hello, I'm a Hong Kong based Web Developer and mainly focus on front-end!`}
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
