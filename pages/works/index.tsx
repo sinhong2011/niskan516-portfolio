@@ -4,6 +4,7 @@ import Section from 'components/section'
 import { WorkGridItem } from 'components/grid-item'
 import AcsThumbnail from 'public/images/works/acs_eyecatch.jpeg'
 import QbsThumbnail from 'public/images/works/qbs_eyecatch.png'
+import HthkThumbnail from 'public/images/works/hthk_eyecatch.png'
 
 const Page = () => (
   <Layout title="Works">
@@ -13,7 +14,16 @@ const Page = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+        <Section delay={0.2}>
+          <WorkGridItem
+            id="hthk"
+            title="Java Developer"
+            company="Hutchison Telecom Hong Kong Holdings"
+            thumbnail={HthkThumbnail}>
+            Focus on front-end development
+          </WorkGridItem>
+        </Section>
+        <Section delay={1}>
           <WorkGridItem
             id="acs"
             title="Frontend Developer"

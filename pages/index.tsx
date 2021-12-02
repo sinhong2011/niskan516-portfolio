@@ -56,6 +56,7 @@ function HomePage() {
           />
         </Box>
       </Box>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -80,8 +81,27 @@ function HomePage() {
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1995</BioYear>
-          Born on Earth.
+          <BioYear>2021</BioYear>
+          Working at{' '}
+          <NextLink href="/works/hthk/">
+            <Link href="/works/hthk/">
+              Hutchison Telecom Hong Kong Holdings
+            </Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
+          <BioYear>2019</BioYear>
+          Completed the Higher Diploma and Worked at{' '}
+          <NextLink href="/works/acs/">
+            <Link href="/works/acs/">Alliance Computer Systems Ltd.</Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Analytics Intern for{' '}
+          <NextLink href="/works/qbs/">
+            <Link href="/works/qbs/">QBS System Ltd in Summer.</Link>
+          </NextLink>
         </BioSection>
         <BioSection>
           <BioYear>2017</BioYear>
@@ -95,25 +115,8 @@ function HomePage() {
           </NextLink>
         </BioSection>
         <BioSection>
-          <BioYear>2018</BioYear>
-          Analytics Intern for{' '}
-          <NextLink href="/works/qbs/">
-            <Link href="/works/qbs/">QBS System Ltd in Summer.</Link>
-          </NextLink>
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Completed the Higher Diploma and Worked at{' '}
-          <NextLink href="/works/acs/">
-            <Link href="/works/acs/">Alliance Computer Systems Ltd.</Link>
-          </NextLink>
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Work at{' '}
-          <NextLink href="/works/hthk/">
-            <Link href="/works/hthk/">HTHK</Link>
-          </NextLink>
+          <BioYear>1995</BioYear>
+          Born on Earth.
         </BioSection>
       </Section>
       <Section delay={0.3}>
