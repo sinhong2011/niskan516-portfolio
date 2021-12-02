@@ -109,7 +109,7 @@ function HomePage() {
           </NextLink>
         </BioSection>
         <BioSection>
-          <BioYear>2021 June to present</BioYear>
+          <BioYear>2021</BioYear>
           Work at{' '}
           <NextLink href="/works/hthk/">
             <Link href="/works/hthk/">HTHK</Link>
