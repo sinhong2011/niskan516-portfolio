@@ -70,7 +70,12 @@ export const WorkGridItem = ({
   thumbnail,
   company,
 }: GridItemProps) => (
-  <Box w="100%" textAlign="center">
+  <Box
+    maxW="md"
+    borderWidth="1px"
+    borderRadius="lg"
+    overflow="hidden"
+    padding="5px">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">
         <Text

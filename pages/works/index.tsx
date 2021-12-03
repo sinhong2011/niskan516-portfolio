@@ -13,7 +13,7 @@ const Page = () => (
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={{ sm: 1, md: 2 }} gap={6}>
         <Section delay={0.2}>
           <WorkGridItem
             id="hthk"
