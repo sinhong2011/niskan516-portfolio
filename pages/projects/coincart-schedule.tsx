@@ -6,10 +6,10 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 
 const Page = () => (
-  <Layout title="CoinCart Map">
+  <Layout title="CoinCart Schedule">
     <Container>
       <XBreadcrumb parent="Projects">
-        Coincart Map <Badge>2021</Badge>
+        Coincart Schedule <Badge>2021</Badge>
       </XBreadcrumb>
       <P>
         An web app that show the location and schedule of the mobile coincart on
