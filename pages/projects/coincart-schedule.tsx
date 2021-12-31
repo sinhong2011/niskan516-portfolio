@@ -1,5 +1,13 @@
 import Layout from 'components/layouts/article'
-import { Container, Badge, List, ListItem, Link, Box } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  List,
+  ListItem,
+  Link,
+  Box,
+  SimpleGrid,
+} from '@chakra-ui/react'
 import P from 'components/paragraph'
 import { XBreadcrumb, Meta, XImage } from 'components/xbreadcrumb'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -25,8 +33,12 @@ const Page = () => (
           </NextLink>
         </ListItem>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
+          <Meta>SEO KEYWORDS</Meta>
+          <NextLink href="https://tinyurl.com/2csyvts5">
+            <Link href="https://tinyurl.com/2csyvts5" target="_blank">
+              流動收銀車 時間表 <ExternalLinkIcon mx="2px" />
+            </Link>
+          </NextLink>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
@@ -34,26 +46,33 @@ const Page = () => (
         </ListItem>
       </List>
       <Box px={3} py={2}>
-        {[
-          'HKMAGOVHK',
-          'CoinCart',
-          'CoinCollection',
-          'TooManyCoins',
-          'CoincartSchedule',
-          'MAP',
-        ].map((tag, tIdx) => (
-          <Badge
-            key={tIdx}
-            size={'sm'}
-            variant="solid"
-            colorScheme="teal"
-            m="1">
-            {`# ${tag}`}
-          </Badge>
-        ))}
+        {['香港金管局', '收銀車', '硬幣收集', '收銀車時間表', '地圖'].map(
+          (tag, tIdx) => (
+            <Badge
+              key={tIdx}
+              size={'md'}
+              variant="solid"
+              colorScheme="teal"
+              m="1">
+              {`#${tag}`}
+            </Badge>
+          )
+        )}
       </Box>
-      <XImage src="/images/projects/coincart-map_01.png" alt="Coincart-map" />
-      <XImage src="/images/projects/coincart-map_02.png" alt="Coincart-map" />
+      <SimpleGrid columns={[2, 2, 3]} gap={6}>
+        <XImage
+          src="/images/projects/coincart-schedule_01.png"
+          alt="Coincart-map"
+        />
+        <XImage
+          src="/images/projects/coincart-schedule_02.png"
+          alt="Coincart-map"
+        />
+        <XImage
+          src="/images/projects/coincart-schedule_03.png"
+          alt="Coincart-map"
+        />
+      </SimpleGrid>
     </Container>
   </Layout>
 )
