@@ -6,7 +6,7 @@ const Page = () => (
   <Layout title="QBS System Limited">
     <Container>
       <XBreadcrumb parent="Works">
-        QBS System Limited <Badge>2018 AUGUST</Badge>
+        QBS System Limited <Badge>2018 AUGUST - 2018 AUGUST</Badge>
       </XBreadcrumb>
     </Container>
   </Layout>

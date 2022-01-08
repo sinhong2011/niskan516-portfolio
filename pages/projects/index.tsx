@@ -14,8 +14,8 @@ const Page = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <ProjectGridItem
-            id="coincart-map"
-            title="Coincart-Map"
+            id="coincart-schedule"
+            title="Coincart-Schedule"
             thumbnail={CoincartThumbnail}>
             An web app that show the location and schedule of the mobile coin
             cart on a map.

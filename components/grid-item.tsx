@@ -70,16 +70,18 @@ export const WorkGridItem = ({
   thumbnail,
   company,
 }: GridItemProps) => (
-  <Box w="100%" textAlign="center">
+  <Box
+    maxW="md"
+    borderWidth="1px"
+    borderRadius="lg"
+    overflow="hidden"
+    padding="8px">
     <NextLink href={`/works/${id}`}>
-      <LinkBox cursor="pointer">
-        <Text
-          height="65px"
-          fontWeight="bold"
-          fontSize="20"
-          textDecoration="underline">
-          {company}
-        </Text>
+      <LinkBox
+        cursor="pointer"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center">
         <Image
           src={thumbnail}
           alt={title}
@@ -87,12 +89,14 @@ export const WorkGridItem = ({
           placeholder="blur"
           objectFit="contain"
         />
-        <LinkOverlay href={`/works/${id}`}>
+        <LinkOverlay href={`/works/${id}`} textAlign="center">
           <Heading mt={2} as="h4" variant="section-title">
             {title}
           </Heading>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={14} textAlign="center">
+          {children}
+        </Text>
       </LinkBox>
     </NextLink>
   </Box>
