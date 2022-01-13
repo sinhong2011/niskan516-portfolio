@@ -17,13 +17,13 @@ const Page = () => (
         <Section delay={0.2}>
           <WorkGridItem
             id="hthk"
-            title="Java Developer"
+            title="Frontend Developer"
             company="Hutchison Telecom Hong Kong Holdings"
             thumbnail={HthkLogo}>
-            Focus on front-end development
+            Focus on front-end development.
           </WorkGridItem>
         </Section>
-        <Section delay={1}>
+        <Section delay={0.5}>
           <WorkGridItem
             id="acs"
             title="Frontend Developer"
@@ -33,7 +33,7 @@ const Page = () => (
             experience.
           </WorkGridItem>
         </Section>
-        <Section delay={0.2}>
+        <Section delay={0.8}>
           <WorkGridItem
             id="qbs"
             title="Analytics Intern"
