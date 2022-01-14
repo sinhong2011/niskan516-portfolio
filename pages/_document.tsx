@@ -64,17 +64,11 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900&display=swap"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
           />
           <link
             rel="stylesheet"

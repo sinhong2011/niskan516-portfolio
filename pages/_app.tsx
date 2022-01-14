@@ -9,7 +9,6 @@ import Layout from 'components/layouts/main'
 import { isBrowser } from 'utils/xCm'
 import { AnimatePresence } from 'framer-motion'
 import theme from 'lib/theme'
-import Fonts from 'components/fonts'
 import 'react-medium-image-zoom/dist/styles.css'
 
 function App({ Component, pageProps, router }: AppProps) {
@@ -50,7 +49,6 @@ function App({ Component, pageProps, router }: AppProps) {
       />
 
       <ChakraProvider theme={theme}>
-        <Fonts />
         <Layout router={router}>
           <AnimatePresence exitBeforeEnter initial={true}>
             <Component {...pageProps} key={router.route} />

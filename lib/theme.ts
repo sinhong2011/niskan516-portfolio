@@ -29,10 +29,12 @@ const components = {
       textUnderlineOffset: 3,
     }),
   },
+  badge: {},
 }
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'",
+  heading: 'nunito',
+  badge: 'M PLUS Rounded 1c',
 }
 
 const colors = {

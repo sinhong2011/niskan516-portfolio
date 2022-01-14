@@ -30,7 +30,12 @@ export const XImage = ({ src, alt }: { src: string; alt: string }) => (
 )
 
 export const Meta = ({ children }: { children: React.ReactNode }) => (
-  <Badge colorScheme="green" mr={2}>
+  <Badge
+    colorScheme="green"
+    mr={2}
+    style={{
+      fontSize: 15,
+    }}>
     {children}
   </Badge>
 )
