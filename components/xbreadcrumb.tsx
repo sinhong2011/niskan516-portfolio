@@ -20,9 +20,17 @@ export const XBreadcrumb = ({ children, parent }: XBreadcrumbProps) => (
   </Box>
 )
 
-export const XImage = ({ src, alt }: { src: string; alt: string }) => (
+export const XImage = ({
+  src,
+  alt,
+  zoomMargin = 60,
+}: {
+  src: string
+  alt: string
+  zoomMargin?: number
+}) => (
   <Zoom
-    zoomMargin={60}
+    zoomMargin={zoomMargin}
     overlayBgColorStart="rgba(52,52,52,0.9)"
     overlayBgColorEnd="rgba(52,52,52,0.9)">
     <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
@@ -30,7 +38,12 @@ export const XImage = ({ src, alt }: { src: string; alt: string }) => (
 )
 
 export const Meta = ({ children }: { children: React.ReactNode }) => (
-  <Badge colorScheme="green" mr={2}>
+  <Badge
+    colorScheme="green"
+    mr={2}
+    style={{
+      fontSize: 14,
+    }}>
     {children}
   </Badge>
 )

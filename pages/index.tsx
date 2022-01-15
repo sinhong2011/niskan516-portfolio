@@ -7,7 +7,6 @@ import {
   Heading,
   Box,
   Image,
-  // SimpleGrid,
   Button,
   List,
   ListItem,
@@ -17,7 +16,7 @@ import {
 import Section from 'components/section'
 import Paragraph from 'components/paragraph'
 import { BioSection, BioYear } from 'components/bio'
-import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 function HomePage() {
   return (
@@ -81,6 +80,15 @@ function HomePage() {
           Bio
         </Heading>
         <BioSection>
+          <BioYear>2022</BioYear>
+          Studying Part-time course{' '}
+          <NextLink href="https://bit.ly/3FqTfil">
+            <Link href="https://bit.ly/3FqTfil" target={'_blank'}>
+              BCOMPHIT1 - BComp (Hons) Internet Tech
+            </Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
           <BioYear>2021</BioYear>
           Working at{' '}
           <NextLink href="/works/hthk/">
@@ -106,10 +114,8 @@ function HomePage() {
         <BioSection>
           <BioYear>2017</BioYear>
           Take course of{' '}
-          <NextLink href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/">
-            <Link
-              href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/"
-              target="_blank">
+          <NextLink href="https://bit.ly/3ftH7Te">
+            <Link href="https://bit.ly/3ftH7Te" target="_blank">
               Higher Diploma in Data Science and Analytics
             </Link>
           </NextLink>
@@ -139,6 +145,18 @@ function HomePage() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}>
                 @sinhong2011
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/sin-hong-kan-369613169/"
+              target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}>
+                @sin-hong-kan
               </Button>
             </Link>
           </ListItem>
