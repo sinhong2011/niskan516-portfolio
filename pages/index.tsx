@@ -7,7 +7,6 @@ import {
   Heading,
   Box,
   Image,
-  // SimpleGrid,
   Button,
   List,
   ListItem,
@@ -17,7 +16,7 @@ import {
 import Section from 'components/section'
 import Paragraph from 'components/paragraph'
 import { BioSection, BioYear } from 'components/bio'
-import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 function HomePage() {
   return (
@@ -139,6 +138,18 @@ function HomePage() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}>
                 @sinhong2011
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/sin-hong-kan-369613169/"
+              target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}>
+                @sin-hong-kan
               </Button>
             </Link>
           </ListItem>

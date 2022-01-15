@@ -42,7 +42,7 @@ const Page = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, Typescript, Nextjs, Leaflet</span>
+          <span>React, Typescript, Nextjs, Redux, Leaflet</span>
         </ListItem>
       </List>
       <Box px={3} py={2}>
