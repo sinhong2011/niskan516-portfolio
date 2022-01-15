@@ -66,9 +66,9 @@ const Page = () => (
         Hutchison Telecom Hong Kong Holdings <Badge>2021 JUNE - present</Badge>
       </XBreadcrumb>
       <Paragraph>
-        Build reusable components in React, translating designs and wireframes
+        Build reusable components in React, translate designs and wireframes
         into high-quality code, guide frontend team to using typescripit that
-        make our code is more reliable and easier to refactor and this enables
+        makes our code is more reliable and easier to refactor and this enables
         developers to evade errors and do rewrites much easier. Using Gitlab
         ci/cd for a better product delivery experience.
       </Paragraph>
