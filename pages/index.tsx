@@ -80,6 +80,15 @@ function HomePage() {
           Bio
         </Heading>
         <BioSection>
+          <BioYear>2022</BioYear>
+          Studying Part-time course{' '}
+          <NextLink href="https://bit.ly/3FqTfil">
+            <Link href="https://bit.ly/3FqTfil" target={'_blank'}>
+              BCOMPHIT1 - BComp (Hons) Internet Tech
+            </Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
           <BioYear>2021</BioYear>
           Working at{' '}
           <NextLink href="/works/hthk/">
@@ -105,10 +114,8 @@ function HomePage() {
         <BioSection>
           <BioYear>2017</BioYear>
           Take course of{' '}
-          <NextLink href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/">
-            <Link
-              href="https://www.vtc.edu.hk/admission/en/programme/it114116-higher-diploma-in-data-science-and-analytics/"
-              target="_blank">
+          <NextLink href="https://bit.ly/3ftH7Te">
+            <Link href="https://bit.ly/3ftH7Te" target="_blank">
               Higher Diploma in Data Science and Analytics
             </Link>
           </NextLink>

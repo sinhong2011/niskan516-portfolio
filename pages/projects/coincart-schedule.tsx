@@ -33,6 +33,17 @@ const Page = () => (
           </NextLink>
         </ListItem>
         <ListItem>
+          <Meta>github repository</Meta>
+          <NextLink href="https://github.com/sinhong2011/coincart-react">
+            <Link
+              href="https://github.com/sinhong2011/coincart-react"
+              target="_blank">
+              coincart-react
+              <ExternalLinkIcon mx="2px" />
+            </Link>
+          </NextLink>
+        </ListItem>
+        <ListItem>
           <Meta>SEO KEYWORDS</Meta>
           <NextLink href="https://tinyurl.com/2csyvts5">
             <Link href="https://tinyurl.com/2csyvts5" target="_blank">
