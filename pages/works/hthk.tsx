@@ -44,7 +44,7 @@ const projectsDesc = [
     platform: 'Web Browser',
     techstackTitle: 'Tech stack',
     techStack:
-      'Html5, CSS3, Bootstrap5, JavaScript ES6, ReactJS, Typescript, Webpack5, Cordova, RESTful Api, OCR, gitlab ci/cd',
+      'Html5, CSS3, Bootstrap5, JavaScript ES6, ReactJS, Typescript, Webpack5, Cordova, RESTful Api, OCR, Gitlab ci/cd',
     desc: 'A common module for company different subbrand apps, that provider sim card Real-name Registration to user.',
   },
   {
@@ -54,7 +54,7 @@ const projectsDesc = [
     platform: 'Web Browser',
     techstackTitle: 'Tech stack',
     techStack:
-      'Html5, CSS3, Bootstrap5, JavaScript ES6, ReactJS, Typescript, Nextjs, Redux, RESTful Api, gitlab cicd, docker',
+      'Html5, CSS3, Bootstrap5, JavaScript ES6, ReactJS, Typescript, Nextjs, Redux, RESTful Api, Gitlab cicd, docker',
     desc: "A CMS for company's trader client that provider  msisdn enquiry and form application, etc...",
   },
 ]
@@ -66,11 +66,11 @@ const Page = () => (
         Hutchison Telecom Hong Kong Holdings <Badge>2021 JUNE - present</Badge>
       </XBreadcrumb>
       <Paragraph>
-        Build reusable component in React, translating designs and wireframes
-        into high-quality code, guide frontend team to using typescrpit that
+        Build reusable components in React, translating designs and wireframes
+        into high-quality code, guide frontend team to using typescripit that
         make our code is more reliable and easier to refactor and this enables
-        developers to evade errors and do rewrites much easier. Using gitlab
-        ci/cd for better productity delivery experience.
+        developers to evade errors and do rewrites much easier. Using Gitlab
+        ci/cd for a better product delivery experience.
       </Paragraph>
       <List ml={4} my={4}>
         {companyDesc.map((e, eIdx) => (
