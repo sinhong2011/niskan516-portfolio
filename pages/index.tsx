@@ -28,7 +28,7 @@ function HomePage() {
         mt={2}
         mb={6}
         align="center">
-        {`Hello, I'm a Hong Kong based Web Developer and mainly focus on front-end!`}
+        {`Hello, I'm a Hong Kong based Frontend Developer and mainly focus on front-end!`}
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -46,11 +46,11 @@ function HomePage() {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="100px"
-            maxH="100px"
+            width="100px"
+            height="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/niskan516.jpg"
+            src="/images/avatar.jpg"
             alt="Profile image"
           />
         </Box>
