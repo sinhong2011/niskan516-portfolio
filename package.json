@@ -7,11 +7,11 @@
     "build:dev": "env-cmd -e local next build",
     "build:prod": "env-cmd -e prod next build",
     "start": "env-cmd -e local next start",
-    "lint": "next lint --fix",
+    "lint": "next lint",
     "deploy": "node ./cli/deploy",
     "export": "next export",
     "prepare": "husky install",
-    "pre-commit": "yarn lint && git add -A ."
+    "pre-commit": "pnpm lint && git add -A ."
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.0",
@@ -50,7 +50,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-import-resolver-webpack": "^0.12.2",
-    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.20.0",
