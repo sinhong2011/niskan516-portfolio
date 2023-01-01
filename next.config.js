@@ -1,4 +1,8 @@
-const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  register: true,
+  // skipWaiting: true,
+})
 
 /** @type {import('next').NextConfig} */
 
@@ -11,11 +15,6 @@ module.exports = withPWA({
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  pwa: {
-    dest: 'public',
-    register: true,
-    // skipWaiting: true,
   },
   publicRuntimeConfig: {
     REACT_APP_ENV: process.env.REACT_APP_ENV,

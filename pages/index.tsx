@@ -21,21 +21,12 @@ import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 function HomePage() {
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mt={2}
-        mb={6}
-        align="center">
-        {`Hello, I'm a Hong Kong based Web Developer and mainly focus on front-end!`}
-      </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Leo Kan
           </Heading>
-          <p>Digital Craftsman (Developer / Dancer / Designer)</p>
+          <p>Digital Craftsman ( Developer / Dancer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -61,11 +52,15 @@ function HomePage() {
           Work
         </Heading>
         <Paragraph>
-          Leo Kan is a front-end developer based in Hong Kong, his programmer
-          life start from 2019 July.
-          {/* <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink> */}
+          Hi, I am a passionate front-end web developer with a strong foundation
+          in data science and analytics. I have a strong interest in technology
+          and am constantly seeking new opportunities to learn and grow as a
+          developer. I am particularly fond of TypeScript and am currently
+          learning Rust. I believe in never stopping the pursuit of knowledge
+          and am dedicated to staying up-to-date with the latest technologies
+          and best practices in the field. I am always eager to take on new
+          challenges and apply my skills to create innovative and user-friendly
+          web applications.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">

@@ -26,9 +26,10 @@ const Page = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <NextLink href="https://www.coincart-map-hk.app">
-            <Link href="https://www.coincart-map-hk.app/" target="_blank">
-              https://www.coincart-map-hk.app <ExternalLinkIcon mx="2px" />
+          <NextLink href="https://coin-cart-schedule.software">
+            <Link href="https://coin-cart-schedule.software" target="_blank">
+              coin-cart-schedule.software
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </NextLink>
         </ListItem>
