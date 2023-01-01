@@ -41,22 +41,12 @@
     "airbnb-base",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "prettier",
     "next/core-web-vitals",
-    "plugin:import/typescript",
     "next",
     "next/core-web-vitals"
   ],
-  "plugins": [
-    "react",
-    "react-hooks",
-    "import",
-    "jsx-a11y",
-    "unused-imports",
-    "prettier"
-  ],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "unused-imports", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "React": "writable",
@@ -79,12 +69,6 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ],
     "max-len": 0,
     "no-continue": 0,
     "camelcase": 0,
@@ -94,7 +78,6 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": 0,
     "linebreak-style": ["off", "windows"],
-    "import/prefer-default-export": 0,
     "no-param-reassign": 0,
     "object-curly-newline": 0,
     "class-methods-use-this": 0,
@@ -137,24 +120,6 @@
     ],
     "quote-props": ["error", "as-needed"],
     "eol-last": ["error", "always"],
-    // "import/order": [
-    //   "error",
-    //   {
-    //     "groups": ["builtin", "external", "internal"],
-    //     "pathGroups": [
-    //       {
-    //         "pattern": "react",
-    //         "group": "external",
-    //         "position": "before"
-    //       }
-    //     ],
-    //     "newlines-between": "always",
-    //     "alphabetize": {
-    //       "order": "asc",
-    //       "caseInsensitive": true
-    //     }
-    //   }
-    // ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -165,6 +130,7 @@
         "tsx": "never"
       }
     ],
+
     "react/jsx-no-target-blank": 1
   },
   "settings": {
