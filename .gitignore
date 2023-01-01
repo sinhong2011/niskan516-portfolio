@@ -33,6 +33,7 @@ yarn-error.log*
 # vercel
 .vercel
 
-#pwa 
+#pwa
 sw.*
 workbox*
+.idea

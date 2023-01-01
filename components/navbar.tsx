@@ -40,7 +40,7 @@ const LinkItem = ({
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        _target={_target}
+        target={_target}
         {...props}>
         {children}
       </Link>
@@ -67,10 +67,10 @@ const Navbar = (props: NavbarProps) => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between">
-        <Flex align="center" mr={5}>
+        flexWrap="wrap"
+        textAlign="center"
+        justifyContent="space-between">
+        <Flex textAlign="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -102,7 +102,7 @@ const Navbar = (props: NavbarProps) => {
           </LinkItem> */}
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} textAlign="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

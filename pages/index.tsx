@@ -62,7 +62,7 @@ function HomePage() {
           challenges and apply my skills to create innovative and user-friendly
           web applications.
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box textAlign="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My working history
