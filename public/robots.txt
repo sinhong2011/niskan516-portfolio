@@ -1,6 +1,0 @@
-Sitemap: https://www.niskan516.cat/sitemap.xml
-
-User-agent: *
-Allow: /*
-
-Disallow: /api/*
