@@ -1,16 +1,16 @@
-import Layout from 'components/layouts/article'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
-  Container,
   Badge,
+  Box,
+  Container,
+  Link,
   List,
   ListItem,
-  Link,
-  Box,
   SimpleGrid,
 } from '@chakra-ui/react'
+import Layout from 'components/layouts/article'
 import P from 'components/paragraph'
-import { XBreadcrumb, Meta, XImage } from 'components/xbreadcrumb'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Meta, XBreadcrumb, XImage } from 'components/xbreadcrumb'
 import NextLink from 'next/link'
 
 const Page = () => (
@@ -26,9 +26,9 @@ const Page = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <NextLink href="https://coin-cart-schedule.software">
-            <Link href="https://coin-cart-schedule.software" target="_blank">
-              coin-cart-schedule.software
+          <NextLink href="https://coincart.niskan516dev.com">
+            <Link href="https://coincart.niskan516dev.com" target="_blank">
+              coincart.niskan516dev.com
               <ExternalLinkIcon mx="2px" />
             </Link>
           </NextLink>
@@ -38,7 +38,8 @@ const Page = () => (
           <NextLink href="https://github.com/sinhong2011/coincart-react">
             <Link
               href="https://github.com/sinhong2011/coincart-react"
-              target="_blank">
+              target="_blank"
+            >
               coincart-react
               <ExternalLinkIcon mx="2px" />
             </Link>
@@ -65,7 +66,8 @@ const Page = () => (
               size={'md'}
               variant="solid"
               colorScheme="teal"
-              m="1">
+              m="1"
+            >
               {`#${tag}`}
             </Badge>
           )
